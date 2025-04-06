@@ -2,8 +2,8 @@
 console.log(typeof 2)
 
 // OPERACOES
-var b = 1
-var a = 2
+let b = 1
+let a = 2
 console.log(a+b)
 console.log(a-b)
 console.log(a*b)
@@ -20,6 +20,3 @@ console.log("Olha so um \n teste em duas linhas")
 // CONCATENACAO (Une um ou mais textos usando +)
 console.log("Oi"+ " Meu nome"+" é Mario")
 
-// INTERPOLACAO ${}
-
-// BOOLEANS
