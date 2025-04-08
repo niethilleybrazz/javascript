@@ -33,25 +33,34 @@
 // console.error("Opa!")
 // console.warn("Uepa")
 
-// 7 - If 
-const user = "Joao"
-if(user === "Joao"){
-    console.log("Bem vindo Joao")
-}
+// // 7 - If 
+// const user = "Joao"
+// if(user === "Joao"){
+//     console.log("Bem vindo Joao")
+// }
 
-// 8 - Else 
-const nota = 9
-if(nota >= 6){
-    console.log("Passou")
-} else {
-    console.log("Nao passou")
-}
+// // 8 - Else 
+// const nota = 9
+// if(nota >= 6){
+//     console.log("Passou")
+// } else {
+//     console.log("Nao passou")
+// }
 
-// 9 - Else If
-if (1 > 2) {
-    console.log("Teste")
-} else if (2 > 3) {
-    console.log("Teste 2")
-} else if (5 > 1) {
-    console.log("Agora sim!")
-} 
+// // 9 - Else If
+// if (1 > 2) {
+//     console.log("Teste")
+// } else if (2 > 3) {
+//     console.log("Teste 2")
+// } else if (5 > 1) {
+//     console.log("Agora sim!")
+// } 
+
+// 10 - while (Looping)
+
+let p = 0//incrementador
+
+while (p <5) {
+    console.log(`Repetindo ${p}`)
+    p = p + 1 
+}
