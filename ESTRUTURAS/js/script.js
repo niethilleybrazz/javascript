@@ -58,9 +58,56 @@
 
 // 10 - while (Looping)
 
-let p = 0//incrementador
+// let p = 0//incrementador
 
-while (p <5) {
-    console.log(`Repetindo ${p}`)
-    p = p + 1 
-}
+// while (p <=5) {
+//     console.log(`Repetindo ${p}`)
+//     p = p + 1 
+// }
+
+// 11- do while
+// let o = 10
+
+// do {
+//     console.log(`Valor de o: ${o}`)
+//     o--
+// } while (o >= 1);    
+
+// 12 - for 
+// for (let t = 0; t < 10; t++) {
+//     console.log("Repetindo algo...")
+// }
+
+// 13 - break 
+// for (let g = 20; g > 10; g--) {
+//     console.log(`O valor de g é : ${g}`)
+
+//     if(g === 15){
+//         console.log(`O g é 15!`)
+//         break;
+//     }
+// }
+
+// 14 - continue 
+// for (let s = 0; s < 10; s++) {
+//     // operador de resto : %
+//     if (s % 2 === 0) {
+//         console.log(`Número par! ${s}`)
+//         continue;
+//     }
+// }
+
+// 15 - switch
+// const job = "Programador"
+
+// switch (job) {
+//     case "Programador":
+//         console.log("Voce e um programador!")
+//         break;
+//     case "Advogado" : 
+//         console.log("Voce e um advogado")
+//         break
+//     default:
+//         console.log("Nao sei com oque voce trabalha")
+//         break;
+// }
