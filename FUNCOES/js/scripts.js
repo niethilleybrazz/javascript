@@ -63,3 +63,51 @@ function escopoAninhado() {
 escopoAninhado()
 
 console.log(m)
+
+// 5 - arrow function 
+const testeArrow = () => {
+    console.log("Esta é uma arrow function")
+}
+testeArrow()
+
+const parOuImpar = (n) => {
+    if (n % 2 === 0 ) {
+        console.log("Par!")
+    } else {
+        console.log("Impar!")
+    }
+}
+parOuImpar(6);
+parOuImpar(3);
+
+// 6 - mais de arrow function 
+const raizQuadrada = (x) => {
+    return x * x
+}
+console.log(raizQuadrada(4))
+
+const raizQuadrada2 = (x) => x * x 
+console.log(raizQuadrada2(6))
+
+// 7 - argumentos opcionais
+const multiplication = function(m, n){
+    if(n === undefined){
+        return m*2
+    } else{
+        return m * n
+    }
+}
+console.log(multiplication(6))
+console.log(multiplication(2, 5))
+
+const greeting = (name) => {
+    if (!name) {
+        console.log("Olá!")
+        return
+    }
+    console.log(`Olá ${name}!`)
+}
+greeting();
+greeting("Matheus")
+
+// 8 - 
