@@ -111,3 +111,8 @@
 //         console.log("Nao sei com oque voce trabalha")
 //         break;
 // }
+
+// 16 - functions
+function name(params) {
+    
+}
