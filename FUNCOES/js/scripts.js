@@ -21,7 +21,7 @@ function nomesCons() {
 }
 nomesCons();
 
-// 2 - return
+// 2 - return (  instrução que finaliza a execução de uma função e especifica o valor que a função deve retornar para onde foi chamada )
 const a = 10
 const b = 20 
 const c = 30
@@ -64,7 +64,7 @@ escopoAninhado()
 
 console.log(m)
 
-// 5 - arrow function 
+// 5 - arrow function (função "resumida")
 const testeArrow = () => {
     console.log("Esta é uma arrow function")
 }
@@ -110,4 +110,69 @@ const greeting = (name) => {
 greeting();
 greeting("Matheus")
 
-// 8 - 
+// 8 - default ( é incrementado no "greet =" depois do "=" ele vira um default)
+const customGreeting = (name, greet = "Ola") => {
+    return `${greet}, ${name}`
+}
+console.log(customGreeting("Matheus"))
+console.log(customGreeting("Joao"))
+
+const repeatText = (text, repeat = 2) => {
+    for (let i = 0; i < repeat; i++) {
+        console.log(text)
+    }
+}
+repeatText("Ola")
+repeatText("Agora repete 5 vezes", 5)
+
+// 9 - Closure 
+function someFunction() {
+    let txt = "Alguma coisa"
+
+    function display() {
+        console.log(txt)
+    }
+    display()
+}
+someFunction()
+
+// 10 - Mais sobre closure
+const multiplicationClosure = (n) => {
+    return(m) => {
+        return m*n
+    }
+}
+
+const c1 = multiplicationClosure(5)
+const c2 = multiplicationClosure(10)
+console.log(c1)
+console.log(c2)
+
+console.log(c1(5))
+console.log(c2(10))
+
+// 11 - Recursao (Especie de loop, já que permite a função se autoinvocar continuamente)
+const untilTen = (n, m) => {
+    if (n < 10) {
+        console.log("A função parou!")
+    } else {
+        const x = n - m
+
+        console.log(x)
+
+        untilTen(x,m)
+    }
+}
+untilTen(100, 7)
+
+
+function factorial(x) {
+    if (x === 0) {
+        return 1
+    } else {
+        return x*factorial(x - 1)
+    }
+}
+const num = 6 
+const result = factorial(num)
+console.log(`O fatorial é ${result}`)
