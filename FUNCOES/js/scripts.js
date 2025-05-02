@@ -163,7 +163,7 @@ const untilTen = (n, m) => {
         untilTen(x,m)
     }
 }
-untilTen(100, 7)
+untilTen(20, 4)
 
 
 function factorial(x) {
