@@ -26,3 +26,28 @@ console.log(text.toLowerCase()) // Caixa baixa
 console.log(typeof text.toUpperCase) // toUpperCase é definido como function, mas o nome tecnico é metodo
 console.log(text.indexOf("g")) // Indice
 
+// 5 - Objetos 
+const person = {
+    name:"Matheus",
+    age: 31,
+    job:"Programador"
+}
+console.log(person)
+console.log(person.name)
+console.log(person.age)
+console.log(person.job)
+
+// 6 - Criando e deletando propriedades
+const car = {
+    engine: 2.0,
+    brand: "VW",
+    model: "Tiguan",
+    km: 20000,
+}
+console.log(car)
+
+car.doors = 4
+console.log(car)
+
+delete car.km
+console.log(car)
