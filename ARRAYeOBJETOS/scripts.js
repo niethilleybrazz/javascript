@@ -51,3 +51,74 @@ console.log(car)
 
 delete car.km
 console.log(car)
+
+// 7 - mais sobre objetos
+const obj = {
+    a:"teste",
+    b: true
+}
+
+console.log(obj instanceof Object)
+
+const obj2 = {
+    c:[]
+}
+
+Object.assign(obj2, obj)
+console.log(obj2)
+
+// 8 - conhecendo melhor os objetos
+console.log(Object.keys(obj))
+console.log(Object.keys(obj2))
+
+console.log(Object.entries(obj))
+console.log(Object.entries(obj2))
+
+// 9 - mutacao 
+const a = {
+    name:"Niethilley"
+}
+const b = a 
+
+console.log(a)
+console.log(b)
+
+console.log(a === b)
+
+a.age = 18
+
+console.log(b)
+
+delete b.age
+
+console.log(b)
+console.log(a)
+
+// 10 - loop em array
+const user = ["Niethilley","Matheus","Joao","Ana"]
+
+for(let i = 0; i < user.length; i++){
+    console.log(`Listando o usuario: ${user[i]}`)
+}
+
+// 11 - push e pop
+const array = ["a", "b", "c", "d"]
+
+array.push("e")
+
+console.log(array)
+
+array.pop()
+
+console.log(array)
+
+// 12 - shift e unshift 
+const letters = ["a", "b", "c"]
+
+const letter = letters.shift()
+
+console.log(letter)
+console.log(letters)
+
+letters.unshift("d","e","f")
+console.log(letters)
