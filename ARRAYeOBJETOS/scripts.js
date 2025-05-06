@@ -122,3 +122,11 @@ console.log(letters)
 
 letters.unshift("d","e","f")
 console.log(letters)
+
+// 13 - indexof e lastindexof
+const myElements = ["Morango", "Abacaxi", "Banana", "Laranja","Banana"]
+console.log(myElements.indexOf("Morango"))
+console.log(myElements.indexOf("Banana"))
+
+console.log(myElements[2])
+console.log(myElements[myElements.indexOf("Banana")])
