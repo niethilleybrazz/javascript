@@ -130,3 +130,41 @@ console.log(myElements.indexOf("Banana"))
 
 console.log(myElements[2])
 console.log(myElements[myElements.indexOf("Banana")])
+
+// 14 - slice
+const testeSlice = ["a", "b", "c", "d", "e", "f"]
+const subArray = testeSlice.slice(2,4)
+
+console.log(subArray)
+console.log(testeSlice)
+
+const subArray2 = testeSlice.slice(2,4 +1)
+console.log(subArray2)
+
+// 15 - forEach
+const nums = [1, 2, 3, 4, 5, 6]
+nums.forEach((numero) => {
+    console.log(`O numero e ${numero}`)
+})
+
+const posts = [
+    {title: "Primeiro post", category:"PHP"},
+    {title: "Segundo post", category:"Python"},
+    {title: "Terceiro post", category:"Java"},
+]
+
+posts.forEach((post) => {
+    console.log(`Exibindo ${post.title} da categoria ${post.category}`)
+})
+
+// 16 - includes 
+const brands = ["BMW", "Mercedes", "Audi", "VolksWagen"]
+
+console.log(brands.includes("Mercedes"))
+console.log(brands.includes("Fiat"))
+
+if (brands.includes("Mercedes")){
+    console.log("Tem a marca Mercedes")
+} 
+
+// 17 - reverse 
