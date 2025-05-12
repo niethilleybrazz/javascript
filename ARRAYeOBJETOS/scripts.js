@@ -168,3 +168,48 @@ if (brands.includes("Mercedes")){
 } 
 
 // 17 - reverse 
+const reverseTest = [1,2,3,4,5]
+
+reverseTest.reverse()
+
+console.log(reverseTest)
+
+// 18 - trim
+const trimTest = "    testando \n   "
+console.log(trimTest)
+
+console.log(trimTest.trim())
+
+// 19 - padStart
+const padstartTest =  "1"
+const newNumber = padstartTest.padStart(4, "0")
+
+console.log(padstartTest)
+console.log(newNumber)
+
+// 20 - split 
+const frase = "O rato roeu a roupa do rei de Roma"
+
+const arrayDaFrase = frase.split(" ")
+console.log(arrayDaFrase)
+
+// 21- join 
+const fraseDenovo = arrayDaFrase.join("|")
+console.log(fraseDenovo)
+
+// 22 - repeat 
+const palavra = " Testando "
+console.log(palavra.repeat(3))
+
+// 23 - rest operator
+const somaInfinita = (...args) => {
+    let total = 0
+
+    for (let i = 0; i < args.length; i++) {
+        total += args[i]
+    }
+    return total
+}
+console.log(somaInfinita(1,2,3))
+
+// 24 - for...of
