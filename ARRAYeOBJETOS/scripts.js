@@ -213,3 +213,15 @@ const somaInfinita = (...args) => {
 console.log(somaInfinita(1,2,3))
 
 // 24 - for...of
+const somaInfinita2 = (...args) => {
+    let total = 0
+
+    for(num of args){
+        total += num
+    }
+    return total
+}
+
+console.log(somaInfinita2(1,2,4))
+console.log(somaInfinita2(5,6,1,23,5,6,3,5))
+
