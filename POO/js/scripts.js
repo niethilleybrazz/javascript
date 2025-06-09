@@ -50,4 +50,35 @@ pastorAlemao.raca = "Pastor Alemao"
 
 console.log(pastorAlemao)
 console.log(pastorAlemao.patas)
-console.log(cachorro)
+
+const Bulldog = Object.create(cachorro)
+Bulldog.raca = "Bulldog"
+
+console.log(Bulldog)
+
+// 5 - funcao como classe - funcao construtora
+function criarCachorro(nome, raca) {
+    const cachorro = Object.create({})
+
+    cachorro.raca = raca
+    cachorro.nome = nome
+
+    return cachorro
+}
+
+const bob = criarCachorro("Bob", "Viralata")
+
+console.log(bob)
+
+const nero = criarCachorro("Nero", "Doberman")
+
+console.log(nero)
+
+// 6 - new 
+function Gato(raca, nome){
+    this.raca = raca
+    this.nome = nome
+}
+const tody = new Gato("Siames", "Tody");
+
+console.log(tody)
