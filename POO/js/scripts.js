@@ -75,10 +75,47 @@ const nero = criarCachorro("Nero", "Doberman")
 console.log(nero)
 
 // 6 - new 
-function Gato(raca, nome){
+function Cachorro(raca, nome){
     this.raca = raca
     this.nome = nome
 }
-const tody = new Gato("Siames", "Tody");
+const husky = new Cachorro("Husky", "Tody");
 
-console.log(tody)
+console.log(husky)
+
+// 7- metodo funcao construtora
+Cachorro.prototype.uivar = function() {
+    console.log("Auuuuu")
+}
+
+husky.uivar()
+
+// 8 - classes es6
+class CachorroClasse {
+    constructor(nome, raca) {
+        this.nome = nome
+        this.raca = raca
+    }
+}
+
+const jeff = new CachorroClasse("Jeff", "Labrador");
+console.log(jeff)
+
+console.log(Object.getPrototypeOf(jeff))
+
+// 9 - mais classes 
+class Caminhao {
+    constructor(eixos, cor) {
+        this.eixos = eixos
+        this.cor = cor
+    }
+
+    descreverCaminhao(){
+        console.log(`Este caminhao tem ${this.eixos} e tem a cor ${this.cor}`)
+    }
+}
+
+const Scania = new Caminhao(6, "Vermelho");
+console.log(Scania)
+
+Scania.descreverCaminhao()
