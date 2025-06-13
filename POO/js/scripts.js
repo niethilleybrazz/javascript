@@ -119,3 +119,65 @@ const Scania = new Caminhao(6, "Vermelho");
 console.log(Scania)
 
 Scania.descreverCaminhao()
+
+// 10 - symbol (propriedade unica e imutavel)
+class Aviao {
+    constructor(marca, turbina) {
+        this.marca = marca
+        this.turbina = turbina
+    }
+}
+const asas = Symbol()
+const pilotos = Symbol()
+
+Aviao.prototype[asas] = 2
+Aviao.prototype[pilotos] = 3
+
+const boeing = new Aviao("Boeing", 10);
+
+console.log(boeing)
+
+console.log(boeing[asas])
+console.log(boeing[pilotos])
+
+// 11 - Getter e Setter (get = exibe o valor de um propriedade, set = altera o valor)
+class Post {
+    constructor(titulo, descricao, tags) {
+        this.titulo = titulo
+        this.descricao = descricao
+        this.tags = tags
+    }
+
+    get exibirTitulo() {
+        return `Voce esta lendo: ${this.titulo}`
+    }
+
+    set adicionarTags(tags){
+        const tagsArray = tags.split(" | ")
+        this.tags = tagsArray
+    }
+}
+
+const myPost = new Post("Alguns post", "E um post sobre programacao");
+console.log(myPost)
+console.log(myPost.exibirTitulo)
+myPost.adicionarTags = "programacao, javascript, js"
+
+console.log(myPost)
+
+// 12 - heranca
+class Mamifero {
+    constructor(patas) {
+        this.patas = patas
+    }
+}
+
+class Lobo extends Mamifero{
+    constructor(patas, nome){
+        super(patas, patas)
+        this.nome = nome
+    }
+}
+
+const shark = new Lobo(4, "Shark")
+console.log(shark)
