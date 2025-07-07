@@ -1,0 +1,28 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title{
+    text-align: center;
+    margin: 80px 0;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+#main-container{
+    display: flex;
+    margin: 20px; 
+    justify-content: center;
+}
+.product{
+    margin: 50px;
+}
+
+footer{
+    text-align: center;
+}
