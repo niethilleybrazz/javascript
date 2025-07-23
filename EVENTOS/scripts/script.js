@@ -60,4 +60,22 @@ input.addEventListener("blur", (e) => {
 window.addEventListener("load", (e)=>{
     console.log("A pagina carregou");
 })
-    
+
+// 9 - debounce : executando de tempo em tempo, controlando os eventos
+const debonce = (f, delay) =>{
+
+    let timeOut 
+
+    return(...arguments)=>{
+        if (timeOut) {
+            clearTimeout(timeOut)
+        }
+        timeOut = setTimeout(()=>{
+            f.apply(arguments)
+        }, delay)
+    }
+}
+window.addEventListener("mousemove", debonce(()=>{
+    console.log("EXECUTANDO");
+},400)
+)
