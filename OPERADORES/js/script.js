@@ -20,3 +20,8 @@ console.log("Olha so um \n teste em duas linhas")
 // CONCATENACAO (Une um ou mais textos usando +)
 console.log("Oi"+ " Meu nome"+" é Mario")
 
+// TERNARIO
+const pontuacaoUsuario = 2000;
+const nivelUsuario = pontuacaoUsuario >= 1000 ? "VIP" : "Usuario"
+console.log(nivelUsuario);
+
