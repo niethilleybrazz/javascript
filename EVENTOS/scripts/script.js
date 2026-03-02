@@ -66,7 +66,7 @@ const debonce = (f, delay) =>{
 
     let timeOut 
 
-    return(...arguments)=>{
+    return()=>{
         if (timeOut) {
             clearTimeout(timeOut)
         }

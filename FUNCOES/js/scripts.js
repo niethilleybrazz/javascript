@@ -1,4 +1,4 @@
-// 1 - criando uma function
+``// 1 - criando uma function
 function minhaFuncao() {
     console.log("Testando")
 }
