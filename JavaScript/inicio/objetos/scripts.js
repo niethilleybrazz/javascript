@@ -19,3 +19,18 @@ const carro = {
 }
 
 carro.observacoes()
+
+// Atribuição via desestruturação
+const pessoas = {
+    nome:'Luiz',
+    sobrenome:'Rodolfo',
+    idade:30,
+    endereco:{
+        rua: 'Av. Brasil',
+        numero: 67
+    }
+}
+
+const {nome, sobrenome, idade} = pessoas
+const {endereco: {rua, numero}, endereco} = pessoas
+console.log(endereco);

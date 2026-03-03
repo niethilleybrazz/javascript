@@ -14,13 +14,8 @@ console.log(alunos)
 // alunos[3] = 'Maria'
 // console.log(alunos);
 
-// 2 - Mais sobre arrays (os elemntos sao 0 bases, oque significa que comeca a contar do 0 )
-const arr = ["a", "b", "c", "d"]
-console.log(arr[0])
-console.log(arr[2])
-
-// 3 - Propriedades
-const numbers = [1, 4, 6]
-console.log(numbers.length)
-
-
+// atribuição via desestruturação
+const coordenadas = [10,20]
+const [x,y] = coordenadas
+console.log(x)
+console.log(y);
