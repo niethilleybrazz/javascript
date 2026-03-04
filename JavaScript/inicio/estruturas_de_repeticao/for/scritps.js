@@ -9,11 +9,19 @@
 //     console.log(frutas[i]);
 // }
 
-const pessoa = {
-    nome: 'Ana',
-    sobrenome:'Ferrari',
-    idade: 18
+// const pessoa = {
+//     nome: 'Ana',
+//     sobrenome:'Ferrari',
+//     idade: 18
+// }
+// for (const i in pessoa) {
+//     console.log(pessoa[i]);       
+// }
+
+const nome = "Ana Macedo"
+for (let index = 0; index < nome.length; index++) {
+    console.log(nome[index]);
 }
-for (const i in pessoa) {
-    console.log(pessoa[i]);       
+for (const element of object) {
+             
 }
