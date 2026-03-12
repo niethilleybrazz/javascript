@@ -1,6 +1,7 @@
 import './App.css'
 import image from './assets/image-hat.jpg'
 import Data from './components/Data'
+import ListRender from './components/ListRender'
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         {/* Imagem em assets */}
         <img src={image} alt="" />
         {/* useState */}
-        <Data/>
+        <Data />
+        {/* Renderizador de lista */}
+        <ListRender />
       </div>
   )
 }
