@@ -2,6 +2,18 @@ import './App.css'
 import image from './assets/image-hat.jpg'
 import Data from './components/Data'
 import ListRender from './components/ListRender'
+import CondicionalRender from './components/ConditionalRender'
+import ShowUserName from './components/ShowUserName'
+import CarDetails from './components/CarDetails'
+import Container from './components/Container'
+import { Children } from 'react'
+
+// Renderizacao de listas com componente
+const cars = [
+  {id: 1, brand: "VW", color:"amarelo", km:"100"},
+  {id: 2, brand: "BMW", color:"azul", km:"100"},
+  {id: 3, brand: "Mercedes", color:"cinza", km:"100"}
+]
 
 function App() {
   return (
@@ -15,8 +27,27 @@ function App() {
         <Data />
         {/* Renderizador de lista */}
         <ListRender />
+        {/* Renderizador condicional */}
+        <CondicionalRender/>
+        {/* Props */}
+        <ShowUserName name="Niethilley"/>
+        {/* Desestruturacao de Prps */}
+        <CarDetails brand="BMW" km={2000} color="vermelho"/>
+        {/* Reaproveitando componentes */}
+        <CarDetails brand="Mercedes" km={3000} color={"azul"}/>
+        {/* Renderizacao de lista com componentes */}
+        {cars.map((car) => (
+          <CarDetails 
+            key={car.id} 
+            brand={car.brand} 
+            color={car.color} 
+            km={car.km}/>
+        ))}
+        <Container>
+          <p>Alguma coisa</p>
+        </Container>
       </div>
   )
-}
+} 
 
 export default App
