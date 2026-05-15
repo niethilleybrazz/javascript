@@ -6,7 +6,10 @@ import CondicionalRender from './components/ConditionalRender'
 import ShowUserName from './components/ShowUserName'
 import CarDetails from './components/CarDetails'
 import Container from './components/Container'
-import { Children } from 'react'
+import { Children, useState } from 'react'
+import ExecuteFunction from './components/ExecuteFunction'
+import Message from './components/Message'
+import ChangeMessage from './components/ChangeMessage'
 
 // Renderizacao de listas com componente
 const cars = [
@@ -16,6 +19,17 @@ const cars = [
 ]
 
 function App() {
+  // Funcao em prop
+  function showMessage() {
+    console.log("Clicou")
+  } 
+
+  // State Lift
+  const [message, setMessage] = useState("")
+  const handleMessage = (msg) => {
+    setMessage(msg)
+  }
+
   return (
       <div className='App'>
         <h1>Avancando em React</h1>
@@ -46,6 +60,11 @@ function App() {
         <Container>
           <p>Alguma coisa</p>
         </Container>
+        {/* Funcao em prop */}
+        <ExecuteFunction myFunction={showMessage}/>
+        {/* State Lift */}
+        <Message msg={message}/>
+        <ChangeMessage handleMenssage={handleMessage}/>
       </div>
   )
 } 
