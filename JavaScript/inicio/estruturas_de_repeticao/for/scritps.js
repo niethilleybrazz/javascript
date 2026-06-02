@@ -1,9 +1,9 @@
-// ==== for - basico
+// ====== for - basico ======
 // for(let i = 1; i <= 2; i++ ){
 //     console.log(`Linha ${i}`);
 // }
 
-// ==== for in 
+// ====== for in ======
 // const frutas = ['Pera', 'Maçã', 'Uva']
 // for (const i in frutas) {
 //     console.log(frutas[i]);
@@ -18,10 +18,10 @@
 //     console.log(pessoa[i]);       
 // }
 
-const nome = "Ana Macedo"
-for (let index = 0; index < nome.length; index++) {
-    console.log(nome[index]);
-}
-for (const element of object) {
-             
-}
+
+// ====== for of ======
+// const nome = "Ana Macedo"
+// for (let index = 0; index < nome.length; index++) {
+//     console.log(nome[index]);
+// }
+
